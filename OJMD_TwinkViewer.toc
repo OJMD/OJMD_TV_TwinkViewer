@@ -6,6 +6,7 @@
 ## SavedVariables: DB
 
 Core\LibAddonCompat-1.0.lua
+OJMD_UI.xml
 OJMD_Data.lua
 OJMD_Scripte.lua
 OJMD_UI.lua

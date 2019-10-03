@@ -1,0 +1,81 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+<Frame name="OJMD_TV_DetailsFrame" toplevel="true" parent="UIParent" inherits="TranslucentFrameTemplate" hidden="true" enableMouse="true" >
+		<Size x="974" y="524"/>
+		<Anchors>
+			<Anchor point="CENTER" x="0" y="0"/>
+		</Anchors>
+		<Layers>
+			<Layer level="BORDER" textureSubLevel="-6">
+				<Texture name="$parentTopTileStreaks" inherits="_UI-Frame-TopTileStreaks">
+					<Anchors>
+						<Anchor point="TOPLEFT" x="13" y="-13"/>
+						<Anchor point="BOTTOMRIGHT" relativePoint="TOPRIGHT" x="-13" y="-35"/>
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Frame name="$parentHeader" inherits="TranslucentFrameTemplate" parentKey="header">
+				<Size x="180" y="45"/>
+				<Anchors>
+					<Anchor point="CENTER" relativePoint="TOP" x="0" y="-8"/>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<FontString inherits="GameFontNormal" text="HELP_FRAME_TITLE">
+							<Anchors>
+								<Anchor point="CENTER" x="0" y="0"/>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+			</Frame>
+			<Button name="$parentCloseButton" inherits="UIPanelCloseButton">
+				<Anchors>
+					<Anchor point="TOPRIGHT" relativePoint="TOPRIGHT">
+						<Offset x="-7" y="-7"/>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<Frame name="$parentLeftInset" useParentLevel="true" inherits="InsetFrameTemplate" parentKey="leftInset">
+				<Anchors>
+					<Anchor point="TOPLEFT" x="10" y="-10" />
+					<Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMLEFT" x="207" y="10"/>
+				</Anchors>
+				<Layers>
+					<Layer level="BACKGROUND">
+						<Texture name="$parentLeftShadow" file="Interface\HelpFrame\Tileable-ParchmentEdge-Left" vertTile="true">
+							<Size x="64" y="256"/>
+							<Anchors>
+								<Anchor point="TOPLEFT" x="0" y="0"/>
+								<Anchor point="BOTTOMLEFT" x="0" y="0"/>
+							</Anchors>
+						</Texture>
+						<Texture name="$parentRightShadow" file="Interface\HelpFrame\Tileable-ParchmentEdge-Right" vertTile="true">
+							<Size x="64" y="256"/>
+							<Anchors>
+								<Anchor point="TOPRIGHT" x="0" y="0"/>
+								<Anchor point="BOTTOMRIGHT" x="0" y="0"/>
+							</Anchors>
+						</Texture>
+						<Texture name="$parentTopShadow" file="Interface\HelpFrame\Tileable-ParchmentEdge-Top" horizTile="true">
+							<Size x="256" y="64"/>
+							<Anchors>
+								<Anchor point="TOPLEFT" x="0" y="0"/>
+								<Anchor point="TOPRIGHT" x="0" y="0"/>
+							</Anchors>
+						</Texture>
+						<Texture name="$parentBottomShadow" file="Interface\HelpFrame\Tileable-ParchmentEdge-Bottom" horizTile="true">
+							<Size x="256" y="64"/>
+							<Anchors>
+								<Anchor point="BOTTOMLEFT" x="0" y="0"/>
+								<Anchor point="BOTTOMRIGHT" x="0" y="0"/>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+			</Frame>
+
+</Ui>

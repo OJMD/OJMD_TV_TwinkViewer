@@ -368,20 +368,21 @@ function OJMD_TV.Functions.ShowEquip( CharID )
   if CharID == nil then
     print( "ist  leer")
   else
+    OJMD_TV_DetailsFrame:Show()
     OJMD_TV.UI.MainFrame.buttonClose:Hide()
     OJMD_TV.UI.MainFrame.buttonBack:Show()
     OJMD_TV.UI.RosterScrollFrame:Hide()
-    OJMD_TV.UI.DetailFrame:Show()
+    --OJMD_TV.UI.DetailFrame:Show()
     
     print("CharID: " .. CharID)
   end
 end
 
 function OJMD_TV.Functions.Back() 
-  OJMD_TV.UI.MainFrame.buttonClose:Show()
-  OJMD_TV.UI.MainFrame.buttonBack:Hide()
-  OJMD_TV.UI.RosterScrollFrame:Show()
-  OJMD_TV.UI.DetailFrame:Hide()
+  --OJMD_TV.UI.MainFrame.buttonClose:Show()
+  --OJMD_TV.UI.MainFrame.buttonBack:Hide()
+  --OJMD_TV.UI.RosterScrollFrame:Show()
+  --OJMD_TV.UI.DetailFrame:Hide()
   
 end
 
