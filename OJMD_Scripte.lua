@@ -211,12 +211,6 @@ function OJMD_TV.Functions.ShowTable()
 
   if Filter == nil or Filter == "" then Filter = "Twinks" end
 
-  if OJMD_TV.UI.MainFrame:IsShown() then
-    print("Ja sichbar")
-else
-    print("nicht sichtbar!")
-end
-
   --OJMD_TV.UI.RosterScrollFrame.Header:SetText("- " .. Filter .. " -")
               
   table.sort( DB[ Filter ], function(v1,v2) return v1.Level > v2.Level end)                    
