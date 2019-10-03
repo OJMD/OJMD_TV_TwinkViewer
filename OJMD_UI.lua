@@ -60,7 +60,6 @@ OJMD_TV.UI.MainFrame:RegisterForDrag("LeftButton")
 OJMD_TV.UI.MainFrame:SetScript("OnDragStart", OJMD_TV.UI.MainFrame.StartMoving)
 OJMD_TV.UI.MainFrame:SetScript("OnDragStop", OJMD_TV.UI.MainFrame.StopMovingOrSizing)
 
-
 -- Title
 OJMD_TV.UI.MainFrame.title = OJMD_TV.UI.MainFrame:CreateFontString("TwinkViewer_Title", "OVERLAY", "GameFontNormal")
 OJMD_TV.UI.MainFrame.title:SetPoint("TOP", 0, -5)
